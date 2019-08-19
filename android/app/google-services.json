@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "505392028475",
+    "firebase_url": "https://messagetest-cac9d.firebaseio.com",
+    "project_id": "messagetest-cac9d",
+    "storage_bucket": "messagetest-cac9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505392028475:android:33c1d95fd2d96671",
+        "android_client_info": {
+          "package_name": "com.messagetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505392028475-4c0298oqhamah62p9ri902evklkshtcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATQvSpyGDhflxjuvF9qiqKIEvzux2IPTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505392028475-4c0298oqhamah62p9ri902evklkshtcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
