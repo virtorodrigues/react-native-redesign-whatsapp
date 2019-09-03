@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
 
-import { Tabs, TabHeading, Tab, Container, Header, Content, Icon, Text, Right, Left } from 'native-base'
+import { 
+  Tabs, 
+  Tab, 
+  Container, 
+  Header, 
+  Content, 
+  Icon, 
+  Text, 
+  Right, 
+  Left 
+} from 'native-base'
 
 import styles from '../../style'
 
@@ -10,35 +20,6 @@ import { StatusList } from '../../components/lists/status'
 import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu'
 
 import firebase from 'react-native-firebase'
-
-// const persons = [
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-//   { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-// ]
-
-
 
 export default class Home extends Component {
 
@@ -54,9 +35,6 @@ export default class Home extends Component {
   componentDidMount() {
     this.firestore = firebase.firestore()
       .collection('users')
-      // .doc(props.userId)
-      // .collection('farms')
-      // .where('dasda')
       .get()
       .then((snapshot)=> this.setState({ persons: snapshot.docs }))
       .catch(()=> console.log('foi'))
@@ -65,33 +43,19 @@ export default class Home extends Component {
   _menu = null;
  
   setMenuRef = ref => {
-    this._menu = ref;
-  };
+    this._menu = ref
+  }
  
   hideMenu = () => {
-    this._menu.hide();
-  };
+    this._menu.hide()
+  }
  
   showMenu = () => {
-    this._menu.show();
-  };
+    this._menu.show()
+  }
 
   _logout = () => {
-  //   firebase.database().ref('Users/').on('value', function (snapshot) {
-  //     console.log(snapshot.val())
-  // });
-  //   firebase.database().ref('Users/').push({
-  //     email: 'aaaa',
-     
-  // }).then((data)=>{
-  //     //success callback
-  //     console.log('data ' , data)
-  // }).catch((error)=>{
-  //     //error callback
-  //     console.log('error ' , error)
-  // })
     const { navigation } = this.props
-    console.log('bbbbbbbbbbbbbbbb')
     firebase.auth().signOut()
     .then(() => navigation.navigate('Login'))
     .catch(() => console.log('nao saiu mesmo'))

@@ -9,7 +9,11 @@ import {
   Body 
 } from 'native-base'
 
-export default Item = ({name, hour, image}) => (
+export default Item = ({
+  name, 
+  hour, 
+  image
+}) => (
   <ListItem avatar>
     <Left>
       <Thumbnail source={ image } />

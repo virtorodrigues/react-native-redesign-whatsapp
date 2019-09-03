@@ -1,13 +1,25 @@
 import React, { Component } from 'react'
 
-import { Tabs, View, Spinner, Button, Body, TabHeading, Tab, Form, Item, Input, Container, Header, Content, Icon, Text, Right, Left, Label } from 'native-base'
+import { 
+  View, 
+  Spinner, 
+  Button, 
+  Body, 
+  Item, 
+  Input, 
+  Container, 
+  Header, 
+  Content, 
+  Icon, 
+  Text, 
+  Right, 
+  Left, 
+  Label 
+} from 'native-base'
 
 import styles from '../../style'
 
 import { MessagesList } from '../../components/lists/messages'
-import { CallList } from '../../components/lists/calls'
-import { StatusList } from '../../components/lists/status'
-import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu'
 
 import firebase from 'react-native-firebase'
 
@@ -78,7 +90,11 @@ export default class Messages extends Component {
 
   render() {
     const { navigation } = this.props
-    const { loading, messages, message, persons } = this.state
+    const { 
+      loading, 
+      messages, 
+      message 
+    } = this.state
 
     return (
       <Container style={ styles.container }>

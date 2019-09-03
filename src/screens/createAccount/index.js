@@ -65,7 +65,11 @@ export default class CreateAccount extends Component {
       <Container style={ styles.container }>
         <Header style={ styles.header }>          
           <Left>
-            <Icon  onPress={ ()=>  navigation.navigate('Login') } name='arrowleft' type='AntDesign' style={[ styles.textHeader, { paddingRight: 10 } ]} />
+            <Icon 
+              onPress={ ()=>  navigation.navigate('Login') } 
+              name='arrowleft' 
+              type='AntDesign' 
+              style={[ styles.textHeader, { paddingRight: 10 } ]} />
           </Left>
           <Body>
             <Text style={{ fontSize: 20, color: '#fff' }}>Criar conta</Text>
@@ -85,9 +89,16 @@ export default class CreateAccount extends Component {
             </Item>
             <Item floatingLabel style={{ borderColor: '#075E54' }}>
               <Label>Uma nova senha...</Label>
-              <Input password defaultValue={ this.state.napasswordme } onChangeText={ (password) => this.setState({ password })}/>
+              <Input 
+                password 
+                defaultValue={ this.state.napasswordme } 
+                onChangeText={ (password) => this.setState({ password })}/>
             </Item>
-            <Button onPress={ () => this._createAccount() } style={{ marginTop: 50, backgroundColor: '#075E54' }} rounded block>
+            <Button
+              rounded
+              block
+              onPress={ () => this._createAccount() }
+              style={{ marginTop: 50, backgroundColor: '#075E54' }}>
               <Text>Criar</Text>
             </Button>
           </Form>

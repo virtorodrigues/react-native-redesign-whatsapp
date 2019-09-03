@@ -13,5 +13,5 @@ const Routes = createSwitchNavigator({
     Home: Home,
     Profile: Profile,
     Messages: Messages,
-});
+})
 export default createAppContainer(Routes)

@@ -9,7 +9,13 @@ import {
   Body 
 } from 'native-base'
 
-export default Item = ({name, hour, image, navigation, otherPerson}) => (
+export default Item = ({
+  name, 
+  hour, 
+  image, 
+  navigation, 
+  otherPerson
+}) => (
   
   <ListItem avatar onPress={() => navigation.navigate('Messages', otherPerson={ otherPerson })}>
     <Left>

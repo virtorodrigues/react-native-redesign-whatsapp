@@ -1,6 +1,18 @@
 import React, { Component } from 'react'
 
-import { Tabs, ListItem, Thumbnail, List, TabHeading, Tab, Container, Header, Content, Icon, Accordion, Text, View, Right, Left, Body, Button } from "native-base";
+import { 
+  ListItem, 
+  Thumbnail, 
+  List, 
+  Container,
+  Header, 
+  Content, 
+  Icon,
+  Text, 
+  Right, 
+  Left, 
+  Body
+} from "native-base";
 
 import styles from '../../style'
 

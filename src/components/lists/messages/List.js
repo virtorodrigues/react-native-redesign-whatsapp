@@ -4,8 +4,6 @@ import { FlatList, Dimensions } from 'react-native'
 
 import { Text, View } from 'native-base'
 
-import Item from './Item'
-
 export default MessagesList = ({ messages }) => {
   const { width } = Dimensions.get('window')
   renderItem = ({ item }) => (
