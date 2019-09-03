@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
 
-import { Tabs, Spinner, Button, Body, TabHeading, Tab, Form, Item, Input, Container, Header, Content, Icon, Text, Right, Left, Label } from 'native-base'
+import { 
+  Spinner, 
+  Button, 
+  Body, 
+  Form, 
+  Item, 
+  Input, 
+  Container,
+  Header,
+  Content, 
+  Text, 
+  Label 
+} from 'native-base'
 
 import styles from '../../style'
 
-import { ConversationList } from '../../components/lists/conversations'
-import { CallList } from '../../components/lists/calls'
-import { StatusList } from '../../components/lists/status'
-import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu'
-
 import firebase from 'react-native-firebase'
-
 
 export default class Login extends Component {
 

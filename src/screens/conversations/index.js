@@ -64,8 +64,6 @@ export default class Conversations extends Component {
             </Tab>
           </Tabs>
         </Content>
-          
-        
       </Container>
     )
   }

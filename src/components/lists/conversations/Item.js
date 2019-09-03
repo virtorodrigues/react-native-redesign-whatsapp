@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 
-import { Thumbnail, ListItem, Tabs, TabHeading, Tab, Container, Header, Content, Icon, Accordion, Text, View, Right, Left, Body } from "native-base";
+import { 
+  Thumbnail, 
+  ListItem, 
+  Text, 
+  Right, 
+  Left, 
+  Body 
+} from 'native-base'
 
 export default Item = ({name, hour, image, navigation, otherPerson}) => (
   

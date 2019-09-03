@@ -4,33 +4,6 @@ import { Tabs, ListItem, Thumbnail, List, TabHeading, Tab, Container, Header, Co
 
 import styles from '../../style'
 
-const persons = [
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-  { name: 'Angela', image: require('./foto1.jpeg'), hour: '10:35' },
-]
-
 export default class Profile extends Component {
   
   render() {
@@ -38,7 +11,7 @@ export default class Profile extends Component {
 
     return (
       <Container style={ styles.container }>
-        <Header style={ styles.header }>          
+        <Header style={ styles.header }>
           <Left>
             <Icon  onPress={ ()=>  navigation.navigate('Home') } name='arrowleft' type='AntDesign' style={[ styles.textHeader, { paddingRight: 10 } ]} />
           </Left>

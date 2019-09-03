@@ -1,13 +1,22 @@
 import React, { Component } from 'react'
 
-import { Tabs, Button, TabHeading, Tab, Body, Form, Item, Input, Container, Header, Content, Icon, Text, Right, Left, Label } from 'native-base'
+import { 
+  Button, 
+  Body, 
+  Form, 
+  Item, 
+  Input, 
+  Container, 
+  Header, 
+  Content, 
+  Icon, 
+  Text, 
+  Right, 
+  Left, 
+  Label 
+} from 'native-base'
 
 import styles from '../../style'
-
-import { ConversationList } from '../../components/lists/conversations'
-import { CallList } from '../../components/lists/calls'
-import { StatusList } from '../../components/lists/status'
-import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu'
 
 import firebase from 'react-native-firebase'
 
@@ -52,11 +61,8 @@ export default class CreateAccount extends Component {
 
   render() {
     const { navigation } = this.props
-
     return (
-
       <Container style={ styles.container }>
-
         <Header style={ styles.header }>          
           <Left>
             <Icon  onPress={ ()=>  navigation.navigate('Login') } name='arrowleft' type='AntDesign' style={[ styles.textHeader, { paddingRight: 10 } ]} />

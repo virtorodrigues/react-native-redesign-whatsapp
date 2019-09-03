@@ -4,7 +4,7 @@ import { Tabs, View, Spinner, Button, Body, TabHeading, Tab, Form, Item, Input, 
 
 import styles from '../../style'
 
-import { MessagesList } from '../../components/lists/messagesList'
+import { MessagesList } from '../../components/lists/messages'
 import { CallList } from '../../components/lists/calls'
 import { StatusList } from '../../components/lists/status'
 import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu'
